@@ -1,9 +1,17 @@
-/* line 5, ../../app/styles/resizer.scss */
+/* line 4, ../../app/styles/resizer.scss */
+body {
+  background: #EEF1F3;
+  padding-top: 30px;
+  padding-left: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 11, ../../app/styles/resizer.scss */
 .slider ul {
   width: 200px;
   overflow: visible;
 }
-/* line 11, ../../app/styles/resizer.scss */
+/* line 17, ../../app/styles/resizer.scss */
 .slider ul li {
   max-height: 191px;
   list-style: none;
@@ -14,67 +22,67 @@
   position: relative;
   resize: vertical;
 }
-/* line 18, ../../app/styles/resizer.scss */
+/* line 24, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(1):after {
   background: #ADAC36;
   -webkit-box-shadow: 0 4px 0 0 #ADAC36, 0 12px 0 0 #662760;
 }
-/* line 23, ../../app/styles/resizer.scss */
+/* line 29, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(1) {
   color: #ADAC36;
 }
-/* line 18, ../../app/styles/resizer.scss */
+/* line 24, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(2):after {
   background: #662760;
   -webkit-box-shadow: 0 4px 0 0 #662760, 0 12px 0 0 #E32E8B;
 }
-/* line 23, ../../app/styles/resizer.scss */
+/* line 29, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(2) {
   color: #662760;
 }
-/* line 18, ../../app/styles/resizer.scss */
+/* line 24, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(3):after {
   background: #E32E8B;
   -webkit-box-shadow: 0 4px 0 0 #E32E8B, 0 12px 0 0 #EFC01A;
 }
-/* line 23, ../../app/styles/resizer.scss */
+/* line 29, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(3) {
   color: #E32E8B;
 }
-/* line 18, ../../app/styles/resizer.scss */
+/* line 24, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(4):after {
   background: #EFC01A;
   -webkit-box-shadow: 0 4px 0 0 #EFC01A, 0 12px 0 0 #4F80C2;
 }
-/* line 23, ../../app/styles/resizer.scss */
+/* line 29, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(4) {
   color: #EFC01A;
 }
-/* line 18, ../../app/styles/resizer.scss */
+/* line 24, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(5):after {
   background: #4F80C2;
   -webkit-box-shadow: 0 4px 0 0 #4F80C2, 0 12px 0 0 #F37423;
 }
-/* line 23, ../../app/styles/resizer.scss */
+/* line 29, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(5) {
   color: #4F80C2;
 }
-/* line 18, ../../app/styles/resizer.scss */
+/* line 24, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(6):after {
   background: #F37423;
-  -webkit-box-shadow: 0 4px 0 0 #F37423, 0 12px 0 0 #FFF;
+  -webkit-box-shadow: 0 4px 0 0 #F37423, 0 12px 0 0 #EEF1F3;
 }
-/* line 23, ../../app/styles/resizer.scss */
+/* line 29, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(6) {
   color: #F37423;
 }
-/* line 39, ../../app/styles/resizer.scss */
+/* line 45, ../../app/styles/resizer.scss */
 .slider ul li::-webkit-resizer {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-right: 10px solid #3A5FA5;
 }
-/* line 46, ../../app/styles/resizer.scss */
+/* line 52, ../../app/styles/resizer.scss */
 .slider ul li:after {
   width: -webkit-calc(100% - 103px);
   height: -webkit-calc(100% - 10px);
@@ -86,24 +94,26 @@
   resize: none;
   letter-spacing: 39px;
   color: white;
-  text-indent: -413px;
+  text-indent: -427px;
   white-space: nowrap;
   overflow: hidden;
   font-size: 30px;
+  box-sizing: border-box;
+  padding-top: 20px;
 }
 
-/* line 70, ../../app/styles/resizer.scss */
+/* line 79, ../../app/styles/resizer.scss */
 .slider {
   min-height: 665px;
   height: auto;
   overflow: visible;
   position: relative;
 }
-/* line 76, ../../app/styles/resizer.scss */
+/* line 85, ../../app/styles/resizer.scss */
 .slider ul, .slider .errorContainer {
   float: left;
 }
-/* line 80, ../../app/styles/resizer.scss */
+/* line 89, ../../app/styles/resizer.scss */
 .slider .errorContainer {
   position: absolute;
   top: 0;
@@ -114,41 +124,41 @@
   clip: rect(0px, 500px, 250px, 250px);
   width: 500px;
 }
-/* line 91, ../../app/styles/resizer.scss */
+/* line 100, ../../app/styles/resizer.scss */
 .slider .errorContainer::-webkit-scrollbar {
   opacity: 0;
 }
-/* line 92, ../../app/styles/resizer.scss */
+/* line 101, ../../app/styles/resizer.scss */
 .slider .errorContainer::-webkit-scrollbar-button {
   opacity: 0;
 }
-/* line 93, ../../app/styles/resizer.scss */
+/* line 102, ../../app/styles/resizer.scss */
 .slider .errorContainer::-webkit-scrollbar-track {
   opacity: 0;
 }
-/* line 94, ../../app/styles/resizer.scss */
+/* line 103, ../../app/styles/resizer.scss */
 .slider .errorContainer::-webkit-scrollbar-track-piece {
   opacity: 0;
 }
-/* line 95, ../../app/styles/resizer.scss */
+/* line 104, ../../app/styles/resizer.scss */
 .slider .errorContainer::-webkit-scrollbar-thumb {
   opacity: 0;
 }
-/* line 96, ../../app/styles/resizer.scss */
+/* line 105, ../../app/styles/resizer.scss */
 .slider .errorContainer::-webkit-scrollbar-corner {
   opacity: 0;
 }
-/* line 97, ../../app/styles/resizer.scss */
+/* line 106, ../../app/styles/resizer.scss */
 .slider .errorContainer::-webkit-resizer {
   opacity: 0;
 }
-/* line 100, ../../app/styles/resizer.scss */
+/* line 109, ../../app/styles/resizer.scss */
 .slider .errorContainer p {
   min-height: 80px;
   float: left;
   width: 250px;
 }
-/* line 105, ../../app/styles/resizer.scss */
+/* line 114, ../../app/styles/resizer.scss */
 .slider .errorContainer p.red {
   box-sizing: border-box;
   background: red;
@@ -156,12 +166,12 @@
   padding: 20px;
 }
 
-/* line 117, ../../app/styles/resizer.scss */
+/* line 126, ../../app/styles/resizer.scss */
 .slider {
   display: table;
 }
 
-/* line 120, ../../app/styles/resizer.scss */
+/* line 129, ../../app/styles/resizer.scss */
 .slider .col {
   display: table-cell;
 }

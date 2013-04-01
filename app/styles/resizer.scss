@@ -1,6 +1,12 @@
 $colors: "#ADAC36", "#662760", "#E32E8B", "#EFC01A", "#4F80C2", "#F37423";
-$colors2: "#ADAC36", "#662760", "#E32E8B", "#EFC01A", "#4F80C2", "#F37423", "#FFF";
+$colors2: "#ADAC36", "#662760", "#E32E8B", "#EFC01A", "#4F80C2", "#F37423", "#EEF1F3";
 
+body {
+	background: #EEF1F3;
+	padding-top: 30px;
+	padding-left: 50px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .slider {
 	ul {
 		width: 200px;
@@ -55,11 +61,14 @@ $colors2: "#ADAC36", "#662760", "#E32E8B", "#EFC01A", "#4F80C2", "#F37423", "#FF
 				resize:none;
 				letter-spacing: 39px;
 				color:white;
-				text-indent: -413px;
+				text-indent: -427px;
 				white-space: nowrap;
 
 				overflow:hidden;
 				font-size:30px;
+
+				box-sizing: border-box;
+				padding-top: 20px;
 			}
 		}
 	}
