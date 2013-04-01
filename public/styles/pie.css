@@ -1,0 +1,330 @@
+/* line 17, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 6, ../../app/styles/pie.scss */
+.circle {
+  width: 350px;
+  height: 350px;
+  -webkit-border-radius: 175px 175px;
+  -moz-border-radius: 175px / 175px;
+  border-radius: 175px / 175px;
+  background-color: red;
+  background: red;
+  overflow: hidden;
+}
+/* line 12, ../../app/styles/pie.scss */
+.circle .wedge {
+  background: white;
+  width: 400px;
+  height: 400px;
+  margin-left: 100px;
+  -webkit-transform: skew(30deg, 20deg);
+  -moz-transform: skew(30deg, 20deg);
+  -ms-transform: skew(30deg, 20deg);
+  -o-transform: skew(30deg, 20deg);
+  transform: skew(30deg, 20deg);
+}
+
+/* line 23, ../../app/styles/pie.scss */
+#skew-test {
+  -webkit-transform: skew(30deg, 20deg);
+  -moz-transform: skew(30deg, 20deg);
+  -ms-transform: skew(30deg, 20deg);
+  -o-transform: skew(30deg, 20deg);
+  transform: skew(30deg, 20deg);
+  background: green;
+  width: 400px;
+  height: 400px;
+}
+
+/* line 34, ../../app/styles/pie.scss */
+.timer {
+  position: relative;
+  font-size: 200px;
+}
+
+/* line 39, ../../app/styles/pie.scss */
+.timer > .percent {
+  position: absolute;
+  top: 1.05em;
+  left: 0;
+  width: 3.33em;
+  font-size: 0.3em;
+  text-align: center;
+}
+
+/* line 48, ../../app/styles/pie.scss */
+.timer > #slice {
+  position: absolute;
+  clip: rect(0px, 1em, 1em, 0.5em);
+}
+
+/* line 53, ../../app/styles/pie.scss */
+.timer > #slice.gt50 {
+  clip: rect(auto, auto, auto, auto);
+}
+
+/* line 57, ../../app/styles/pie.scss */
+.timer > #slice > .pie {
+  width: 1em;
+  height: 1em;
+  -webkit-border-radius: 0.5em 0.5em;
+  -moz-border-radius: 0.5em / 0.5em;
+  border-radius: 0.5em / 0.5em;
+  background-color: red;
+  position: absolute;
+  clip: rect(0em, 0.5em, 1em, 0em);
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+/* line 64, ../../app/styles/pie.scss */
+.timer > #slice > .pie.fill {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 69, ../../app/styles/pie.scss */
+.timer.fill > #slice > .pie {
+  background-color: #c0c0c0;
+}
+
+/* line 1, ../../app/styles/_pietest2.scss */
+#pie_chart {
+  overflow: visible;
+  background: blue;
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+/* line 18, ../../app/styles/_mixins.scss */
+#pie_chart li {
+  float: left;
+  background: silver;
+  width: 150px;
+  height: 300px;
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+  display: block;
+}
+/* line 27, ../../app/styles/_mixins.scss */
+#pie_chart li:nth-child(1) {
+  -moz-border-radius-topleft: 150px;
+  -webkit-border-top-left-radius: 150px;
+  border-top-left-radius: 150px;
+  -moz-border-radius-bottomleft: 150px;
+  -webkit-border-bottom-left-radius: 150px;
+  border-bottom-left-radius: 150px;
+  -webkit-transform-origin: 150px 150px;
+  -moz-transform-origin: 150px 150px;
+  -ms-transform-origin: 150px 150px;
+  -o-transform-origin: 150px 150px;
+  transform-origin: 150px 150px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+/* line 33, ../../app/styles/_mixins.scss */
+#pie_chart li:nth-child(2) {
+  -moz-border-radius-topright: 150px;
+  -webkit-border-top-right-radius: 150px;
+  border-top-right-radius: 150px;
+  -moz-border-radius-bottomright: 150px;
+  -webkit-border-bottom-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+  -webkit-transform-origin: 0 150px;
+  -moz-transform-origin: 0 150px;
+  -ms-transform-origin: 0 150px;
+  -o-transform-origin: 0 150px;
+  transform-origin: 0 150px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+/* line 49, ../../app/styles/_mixins.scss */
+#pie_chart.fill-0 li:nth-child(2) {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+/* line 49, ../../app/styles/_mixins.scss */
+#pie_chart.fill-10 li:nth-child(2) {
+  -webkit-transform: rotate(36deg);
+  -moz-transform: rotate(36deg);
+  -ms-transform: rotate(36deg);
+  -o-transform: rotate(36deg);
+  transform: rotate(36deg);
+}
+/* line 49, ../../app/styles/_mixins.scss */
+#pie_chart.fill-20 li:nth-child(2) {
+  -webkit-transform: rotate(72deg);
+  -moz-transform: rotate(72deg);
+  -ms-transform: rotate(72deg);
+  -o-transform: rotate(72deg);
+  transform: rotate(72deg);
+}
+/* line 49, ../../app/styles/_mixins.scss */
+#pie_chart.fill-30 li:nth-child(2) {
+  -webkit-transform: rotate(108deg);
+  -moz-transform: rotate(108deg);
+  -ms-transform: rotate(108deg);
+  -o-transform: rotate(108deg);
+  transform: rotate(108deg);
+}
+/* line 49, ../../app/styles/_mixins.scss */
+#pie_chart.fill-40 li:nth-child(2) {
+  -webkit-transform: rotate(144deg);
+  -moz-transform: rotate(144deg);
+  -ms-transform: rotate(144deg);
+  -o-transform: rotate(144deg);
+  transform: rotate(144deg);
+}
+/* line 55, ../../app/styles/_mixins.scss */
+#pie_chart.fill-50 li:nth-child(2) {
+  background: blue;
+}
+/* line 58, ../../app/styles/_mixins.scss */
+#pie_chart.fill-50 li:nth-child(1) {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+/* line 55, ../../app/styles/_mixins.scss */
+#pie_chart.fill-60 li:nth-child(2) {
+  background: blue;
+}
+/* line 58, ../../app/styles/_mixins.scss */
+#pie_chart.fill-60 li:nth-child(1) {
+  -webkit-transform: rotate(36deg);
+  -moz-transform: rotate(36deg);
+  -ms-transform: rotate(36deg);
+  -o-transform: rotate(36deg);
+  transform: rotate(36deg);
+}
+/* line 55, ../../app/styles/_mixins.scss */
+#pie_chart.fill-70 li:nth-child(2) {
+  background: blue;
+}
+/* line 58, ../../app/styles/_mixins.scss */
+#pie_chart.fill-70 li:nth-child(1) {
+  -webkit-transform: rotate(72.0deg);
+  -moz-transform: rotate(72.0deg);
+  -ms-transform: rotate(72.0deg);
+  -o-transform: rotate(72.0deg);
+  transform: rotate(72.0deg);
+}
+/* line 55, ../../app/styles/_mixins.scss */
+#pie_chart.fill-80 li:nth-child(2) {
+  background: blue;
+}
+/* line 58, ../../app/styles/_mixins.scss */
+#pie_chart.fill-80 li:nth-child(1) {
+  -webkit-transform: rotate(108deg);
+  -moz-transform: rotate(108deg);
+  -ms-transform: rotate(108deg);
+  -o-transform: rotate(108deg);
+  transform: rotate(108deg);
+}
+/* line 55, ../../app/styles/_mixins.scss */
+#pie_chart.fill-90 li:nth-child(2) {
+  background: blue;
+}
+/* line 58, ../../app/styles/_mixins.scss */
+#pie_chart.fill-90 li:nth-child(1) {
+  -webkit-transform: rotate(144deg);
+  -moz-transform: rotate(144deg);
+  -ms-transform: rotate(144deg);
+  -o-transform: rotate(144deg);
+  transform: rotate(144deg);
+}
+/* line 55, ../../app/styles/_mixins.scss */
+#pie_chart.fill-100 li:nth-child(2) {
+  background: blue;
+}
+/* line 58, ../../app/styles/_mixins.scss */
+#pie_chart.fill-100 li:nth-child(1) {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}

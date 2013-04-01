@@ -1,0 +1,64 @@
+@mixin circle($diameter, $color: red){
+  width: #{$diameter};
+  height: #{$diameter};
+  @include border-radius($diameter / 2, $diameter / 2); 
+  background-color: $color;
+}
+
+@mixin timer($radius, $used:blue, $bg: silver, $step:10){
+  $dia: $radius * 2;
+
+  overflow: visible;
+  background: #{$used};
+  display: block;
+  width: #{$dia}px;
+  height: #{$dia}px;
+  border-radius: #{$radius}px;
+  
+  li {
+    float: left;
+    background: $bg;
+    width: #{$radius}px;
+    height: #{$dia}px;
+    
+    @include single-transition(all, 0.7s, ease-out);
+    display: block;
+    
+    &:nth-child(1) { 
+       @include border-top-left-radius(#{$radius}px);
+       @include border-bottom-left-radius(#{$radius}px);
+       @include transform-origin(#{$radius}px, #{$radius}px);
+       @include rotate(0deg);
+    }
+    &:nth-child(2) {
+      @include border-top-right-radius(#{$radius}px);
+      @include border-bottom-right-radius(#{$radius}px);
+      @include transform-origin(0, #{$radius}px);
+      @include rotate(0deg);
+    }
+  }
+
+  $max: 100 / $step;
+  @for $i from 0 through $max{
+    $pct: $i / $max;
+    $class: $i * $step;
+    $degree: $pct * 360;
+    
+    &.fill-#{$class}{
+      @if $i < $max / 2{
+        li:nth-child(2) { 
+           @include rotate(#{$degree}deg);
+       }
+      }
+      @else{
+          $remaining:  $degree - 180;
+          li:nth-child(2) { 
+             background: $used;
+          }
+          li:nth-child(1){
+              @include rotate(#{$remaining}deg);
+          }
+       }
+     }
+  }
+}

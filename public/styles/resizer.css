@@ -1,0 +1,98 @@
+/* line 4, ../../app/styles/resizer.scss */
+.slider {
+  -webkit-column-count: 2;
+}
+/* line 7, ../../app/styles/resizer.scss */
+.slider ul {
+  width: 200px;
+  overflow: visible;
+  height: 648px;
+}
+/* line 12, ../../app/styles/resizer.scss */
+.slider ul li {
+  max-height: 191px;
+  list-style: none;
+  height: 40px;
+  margin: 0 0;
+  overflow-y: hidden;
+  overflow-x: visible;
+  position: relative;
+  resize: vertical;
+}
+/* line 19, ../../app/styles/resizer.scss */
+.slider ul li:nth-child(1):after {
+  background: #ADAC36;
+  -webkit-box-shadow: 0 12px 0 0 #662760;
+}
+/* line 24, ../../app/styles/resizer.scss */
+.slider ul li:nth-child(1) {
+  color: #ADAC36;
+}
+/* line 19, ../../app/styles/resizer.scss */
+.slider ul li:nth-child(2):after {
+  background: #662760;
+  -webkit-box-shadow: 0 12px 0 0 #E32E8B;
+}
+/* line 24, ../../app/styles/resizer.scss */
+.slider ul li:nth-child(2) {
+  color: #662760;
+}
+/* line 19, ../../app/styles/resizer.scss */
+.slider ul li:nth-child(3):after {
+  background: #E32E8B;
+  -webkit-box-shadow: 0 12px 0 0 #EFC01A;
+}
+/* line 24, ../../app/styles/resizer.scss */
+.slider ul li:nth-child(3) {
+  color: #E32E8B;
+}
+/* line 19, ../../app/styles/resizer.scss */
+.slider ul li:nth-child(4):after {
+  background: #EFC01A;
+  -webkit-box-shadow: 0 12px 0 0 #4F80C2;
+}
+/* line 24, ../../app/styles/resizer.scss */
+.slider ul li:nth-child(4) {
+  color: #EFC01A;
+}
+/* line 19, ../../app/styles/resizer.scss */
+.slider ul li:nth-child(5):after {
+  background: #4F80C2;
+  -webkit-box-shadow: 0 12px 0 0 #F37423;
+}
+/* line 24, ../../app/styles/resizer.scss */
+.slider ul li:nth-child(5) {
+  color: #4F80C2;
+}
+/* line 19, ../../app/styles/resizer.scss */
+.slider ul li:nth-child(6):after {
+  background: #F37423;
+  -webkit-box-shadow: 0 12px 0 0 #FFF;
+}
+/* line 24, ../../app/styles/resizer.scss */
+.slider ul li:nth-child(6) {
+  color: #F37423;
+}
+/* line 39, ../../app/styles/resizer.scss */
+.slider ul li::-webkit-resizer {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #3a5fa5;
+}
+/* line 46, ../../app/styles/resizer.scss */
+.slider ul li:after {
+  width: -webkit-calc(100% - 105px);
+  height: -webkit-calc(100% - 10px);
+  position: absolute;
+  top: 0;
+  left: 95px;
+  background: green;
+  content: attr(style);
+  resize: none;
+  letter-spacing: 39px;
+  color: white;
+  text-indent: -413px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 30px;
+}
