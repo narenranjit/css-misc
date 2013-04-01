@@ -97,35 +97,71 @@
   min-height: 665px;
   height: auto;
   overflow: visible;
-  background: black;
   position: relative;
 }
-/* line 77, ../../app/styles/resizer.scss */
+/* line 76, ../../app/styles/resizer.scss */
 .slider ul, .slider .errorContainer {
   float: left;
 }
-/* line 81, ../../app/styles/resizer.scss */
+/* line 80, ../../app/styles/resizer.scss */
 .slider .errorContainer {
-  background: pink;
   position: absolute;
   top: 0;
   left: 200px;
   right: 0;
-  bottom: 0;
+  bottom: 590px;
   overflow: auto;
+  clip: rect(0px, 500px, 250px, 250px);
   width: 500px;
 }
+/* line 91, ../../app/styles/resizer.scss */
+.slider .errorContainer::-webkit-scrollbar {
+  opacity: 0;
+}
 /* line 92, ../../app/styles/resizer.scss */
+.slider .errorContainer::-webkit-scrollbar-button {
+  opacity: 0;
+}
+/* line 93, ../../app/styles/resizer.scss */
+.slider .errorContainer::-webkit-scrollbar-track {
+  opacity: 0;
+}
+/* line 94, ../../app/styles/resizer.scss */
+.slider .errorContainer::-webkit-scrollbar-track-piece {
+  opacity: 0;
+}
+/* line 95, ../../app/styles/resizer.scss */
+.slider .errorContainer::-webkit-scrollbar-thumb {
+  opacity: 0;
+}
+/* line 96, ../../app/styles/resizer.scss */
+.slider .errorContainer::-webkit-scrollbar-corner {
+  opacity: 0;
+}
+/* line 97, ../../app/styles/resizer.scss */
+.slider .errorContainer::-webkit-resizer {
+  opacity: 0;
+}
+/* line 100, ../../app/styles/resizer.scss */
 .slider .errorContainer p {
-  min-height: 1000px;
+  min-height: 80px;
+  float: left;
+  width: 250px;
+}
+/* line 105, ../../app/styles/resizer.scss */
+.slider .errorContainer p.red {
+  box-sizing: border-box;
+  background: red;
+  color: white;
+  padding: 20px;
 }
 
-/* line 99, ../../app/styles/resizer.scss */
+/* line 117, ../../app/styles/resizer.scss */
 .slider {
   display: table;
 }
 
-/* line 102, ../../app/styles/resizer.scss */
+/* line 120, ../../app/styles/resizer.scss */
 .slider .col {
   display: table-cell;
 }

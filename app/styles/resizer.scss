@@ -71,7 +71,6 @@ $colors2: "#ADAC36", "#662760", "#E32E8B", "#EFC01A", "#4F80C2", "#F37423", "#FF
 	min-height: 665px;
 	height: auto;
 	overflow: visible;
-	background: black;
 
 	position: relative;
 	ul, .errorContainer{
@@ -80,17 +79,36 @@ $colors2: "#ADAC36", "#662760", "#E32E8B", "#EFC01A", "#4F80C2", "#F37423", "#FF
 
 	.errorContainer{
 		// width: -webkit-calc(100% - 200px);
-		background: pink;
 		position: absolute;
 		top: 0;
 		left:200px;
 		right: 0;
-		bottom: 0;
+		bottom: 590px;
 
 		overflow: auto;
+		clip: rect(0px, 500px, 250px, 250px);
+
+		&::-webkit-scrollbar              { opacity: 0;}
+		&::-webkit-scrollbar-button       { opacity: 0;}
+		&::-webkit-scrollbar-track        { opacity: 0;}
+		&::-webkit-scrollbar-track-piece  { opacity: 0;}
+		&::-webkit-scrollbar-thumb        { opacity: 0;}
+		&::-webkit-scrollbar-corner       { opacity: 0;}
+		&::-webkit-resizer                { opacity: 0;}
+
 		width: 500px;
 		p {
-			min-height: 1000px;
+			min-height: 80px;
+			float: left;
+			width: 250px;
+
+			&.red {
+				box-sizing: border-box;
+				background: red;
+				color: white;
+
+				padding: 20px;
+			}
 		}
 	}
 }
