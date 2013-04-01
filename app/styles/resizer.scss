@@ -2,12 +2,11 @@ $colors: "#ADAC36", "#662760", "#E32E8B", "#EFC01A", "#4F80C2", "#F37423";
 $colors2: "#ADAC36", "#662760", "#E32E8B", "#EFC01A", "#4F80C2", "#F37423", "#FFF";
 
 .slider {
-	-webkit-column-count: 2;
-
 	ul {
 		width: 200px;
 		overflow:visible;
-		height: 648px;
+		// -webkit-transform: scale(0.7,0.7);
+		// font-size: 1.2em;
 
 		li {
 			max-height: 191px;
@@ -18,7 +17,7 @@ $colors2: "#ADAC36", "#662760", "#E32E8B", "#EFC01A", "#4F80C2", "#F37423", "#FF
 
 				 &:nth-child(#{$index}):after{
 					background: #{$color};
-					-webkit-box-shadow: 0 12px 0 0  #{$nextColor};
+					-webkit-box-shadow: 0 4px 0 0  #{$color}, 0 12px 0 0  #{$nextColor};
 				}
 
 				&:nth-child(#{$index}) {
@@ -30,6 +29,7 @@ $colors2: "#ADAC36", "#662760", "#E32E8B", "#EFC01A", "#4F80C2", "#F37423", "#FF
 			height: 40px;
 			margin: 0 0;
 
+			// margin-top: -10px;
 			overflow-y: hidden;
 			overflow-x: visible;
 			position:relative;
@@ -44,10 +44,10 @@ $colors2: "#ADAC36", "#662760", "#E32E8B", "#EFC01A", "#4F80C2", "#F37423", "#FF
 				border-right:10px solid #3A5FA5;
 			}
 			&:after {
-				width:  -webkit-calc(100% - 105px);
+				width:  -webkit-calc(100% - 103px);
 				height: -webkit-calc(100% - 10px);
 				position: absolute;
-				top: 0;
+				top: -1px;
 				left: 95px;
 				background:green;
 				content: attr(style);
@@ -67,24 +67,39 @@ $colors2: "#ADAC36", "#662760", "#E32E8B", "#EFC01A", "#4F80C2", "#F37423", "#FF
 
 }
 
-// .slider {
-// 	min-height: 665px;
-// 	height: auto;
-// 	overflow: visible;
-// 	background: black;
+.slider {
+	min-height: 665px;
+	height: auto;
+	overflow: visible;
+	background: black;
 
-// 	position: relative;
-// 	ul, .errorContainer{
-// 		float: left;
-// 	}
+	position: relative;
+	ul, .errorContainer{
+		float: left;
+	}
 
-// 	.errorContainer{
-// 		// width: -webkit-calc(100% - 200px);
-// 		background: pink;
-// 		position: absolute;
-// 		top: 0;
-// 		left:200px;
-// 		right: 0;
-// 		bottom: 0;
-// 	}
-// }
+	.errorContainer{
+		// width: -webkit-calc(100% - 200px);
+		background: pink;
+		position: absolute;
+		top: 0;
+		left:200px;
+		right: 0;
+		bottom: 0;
+
+		overflow: auto;
+		width: 500px;
+		p {
+			min-height: 1000px;
+		}
+	}
+}
+
+
+.slider {
+	display: table;
+}
+.slider .col {
+	display: table-cell;
+}
+

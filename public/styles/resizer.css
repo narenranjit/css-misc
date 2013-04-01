@@ -1,14 +1,9 @@
-/* line 4, ../../app/styles/resizer.scss */
-.slider {
-  -webkit-column-count: 2;
-}
-/* line 7, ../../app/styles/resizer.scss */
+/* line 5, ../../app/styles/resizer.scss */
 .slider ul {
   width: 200px;
   overflow: visible;
-  height: 648px;
 }
-/* line 12, ../../app/styles/resizer.scss */
+/* line 11, ../../app/styles/resizer.scss */
 .slider ul li {
   max-height: 191px;
   list-style: none;
@@ -19,57 +14,57 @@
   position: relative;
   resize: vertical;
 }
-/* line 19, ../../app/styles/resizer.scss */
+/* line 18, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(1):after {
   background: #ADAC36;
-  -webkit-box-shadow: 0 12px 0 0 #662760;
+  -webkit-box-shadow: 0 4px 0 0 #ADAC36, 0 12px 0 0 #662760;
 }
-/* line 24, ../../app/styles/resizer.scss */
+/* line 23, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(1) {
   color: #ADAC36;
 }
-/* line 19, ../../app/styles/resizer.scss */
+/* line 18, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(2):after {
   background: #662760;
-  -webkit-box-shadow: 0 12px 0 0 #E32E8B;
+  -webkit-box-shadow: 0 4px 0 0 #662760, 0 12px 0 0 #E32E8B;
 }
-/* line 24, ../../app/styles/resizer.scss */
+/* line 23, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(2) {
   color: #662760;
 }
-/* line 19, ../../app/styles/resizer.scss */
+/* line 18, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(3):after {
   background: #E32E8B;
-  -webkit-box-shadow: 0 12px 0 0 #EFC01A;
+  -webkit-box-shadow: 0 4px 0 0 #E32E8B, 0 12px 0 0 #EFC01A;
 }
-/* line 24, ../../app/styles/resizer.scss */
+/* line 23, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(3) {
   color: #E32E8B;
 }
-/* line 19, ../../app/styles/resizer.scss */
+/* line 18, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(4):after {
   background: #EFC01A;
-  -webkit-box-shadow: 0 12px 0 0 #4F80C2;
+  -webkit-box-shadow: 0 4px 0 0 #EFC01A, 0 12px 0 0 #4F80C2;
 }
-/* line 24, ../../app/styles/resizer.scss */
+/* line 23, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(4) {
   color: #EFC01A;
 }
-/* line 19, ../../app/styles/resizer.scss */
+/* line 18, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(5):after {
   background: #4F80C2;
-  -webkit-box-shadow: 0 12px 0 0 #F37423;
+  -webkit-box-shadow: 0 4px 0 0 #4F80C2, 0 12px 0 0 #F37423;
 }
-/* line 24, ../../app/styles/resizer.scss */
+/* line 23, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(5) {
   color: #4F80C2;
 }
-/* line 19, ../../app/styles/resizer.scss */
+/* line 18, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(6):after {
   background: #F37423;
-  -webkit-box-shadow: 0 12px 0 0 #FFF;
+  -webkit-box-shadow: 0 4px 0 0 #F37423, 0 12px 0 0 #FFF;
 }
-/* line 24, ../../app/styles/resizer.scss */
+/* line 23, ../../app/styles/resizer.scss */
 .slider ul li:nth-child(6) {
   color: #F37423;
 }
@@ -77,14 +72,14 @@
 .slider ul li::-webkit-resizer {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-right: 10px solid #3a5fa5;
+  border-right: 10px solid #3A5FA5;
 }
 /* line 46, ../../app/styles/resizer.scss */
 .slider ul li:after {
-  width: -webkit-calc(100% - 105px);
+  width: -webkit-calc(100% - 103px);
   height: -webkit-calc(100% - 10px);
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 95px;
   background: green;
   content: attr(style);
@@ -95,4 +90,42 @@
   white-space: nowrap;
   overflow: hidden;
   font-size: 30px;
+}
+
+/* line 70, ../../app/styles/resizer.scss */
+.slider {
+  min-height: 665px;
+  height: auto;
+  overflow: visible;
+  background: black;
+  position: relative;
+}
+/* line 77, ../../app/styles/resizer.scss */
+.slider ul, .slider .errorContainer {
+  float: left;
+}
+/* line 81, ../../app/styles/resizer.scss */
+.slider .errorContainer {
+  background: pink;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  width: 500px;
+}
+/* line 92, ../../app/styles/resizer.scss */
+.slider .errorContainer p {
+  min-height: 1000px;
+}
+
+/* line 99, ../../app/styles/resizer.scss */
+.slider {
+  display: table;
+}
+
+/* line 102, ../../app/styles/resizer.scss */
+.slider .col {
+  display: table-cell;
 }
